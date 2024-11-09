@@ -1,48 +1,109 @@
 
 # 🥥 Coconuts for Padded Helmets 🥥
 
+![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)
+![Build Status](https://img.shields.io/github/actions/workflow/status/nerdboy1024/coconuts-for-padded-helmets/build.yml)
+![Hosted on Railway](https://img.shields.io/badge/hosted%20on-Railway-blueviolet)
+
 **Coconuts for Padded Helmets** is a Discord bot aimed at playfully handling users who ask questions just to get attention. 
-If you're tired of people fishing for replies with the same repetitive questions, this bot will respond with a humorous twist, 
-making sure everyone has a laugh (except maybe the person in the padded helmet 🥳).
+Think of it as your server’s very own sarcastic nanny, here to keep the chaos in check and hand out padded helmets when needed. 🥳
 
 ## Features
 
-- 🚨 **Detects Attention-Seeking Questions**: Automatically spots common repetitive phrases and responses.
-- 🤖 **Sassy Replies**: Provides a playful, sometimes snarky response to keep the conversation fun.
-- 📝 **Tracking System**: Optionally tracks the frequency of these questions for extra trolling.
-- 🎭 **Customizable Responses**: Tailor the replies to fit the vibe of your Discord server.
+- 🚨 **Detects Attention-Seeking Questions**: The bot has a sixth sense for spotting users fishing for attention – no bait needed.
+- 🤖 **Sassy Replies**: Expect snarky comebacks and cheeky responses that make everyone laugh (except the attention seeker).
+- 📝 **Tracking System**: Keeps score of attention-seeking behavior like a referee in a game nobody wants to win.
+- 🎭 **Customizable Responses**: Want the bot to call out your friends in style? Customize the responses for maximum effect.
+- 🧑‍💬 **Optional Special User Replies**: Automatically replies to Coconuts (because we all know he’ll be testing the bot nonstop). This feature can be toggled off if the server needs a break.
+- 🔨 **Optional Moderation**: Give the bot a little authority, and it will start issuing warnings, mutes, and even kicks faster than you can say “calm down.”
 
-## Technologies
+## Additional Features
 
-- Discord bot framework (TBD)
-- Language: (Your choice, e.g., Python, JavaScript, Kotlin)
-- Optional database for tracking (SQLite, MongoDB, etc.)
+- 🏆 **Attention Seeker Leaderboard**: Keep track of who’s leading the race to the padded helmet.
+- ⏳ **Cooldown Mechanism**: Built-in cooldowns because even Coconuts needs to take a breath once in a while.
+- 🎨 **Customizable Responses**: Make the bot sound like Shakespeare or your grumpy uncle – it’s up to you!
+- 📊 **Statistics Command** (`!stats`): Want to see how many times the bot’s called out Coconuts? Check the stats for a laugh.
+- 🎮 **Minigames**: Distract attention-seekers with a game of “Guess the Emoji” or a quick quiz.
+- 🎉 **Event-Based Replies**: The bot can even roast Coconuts when he joins a voice channel – it’s like a welcoming committee with attitude.
+- 🔧 **Dynamic Response Frequency**: Adjust how often the bot replies – from “Chill Mode” to “Relentless Sarcasm.”
+- 🥥 **Attention-Seeker Role Assignment**: Earn the prestigious title of “Resident Coconut” for repeated offenses.
+- 📈 **Logging and Analytics**: Detailed logs of all the hilarity for admins to review (and laugh at).
+- 🤝 **Friendly Reminder Mode**: The bot can gently guide users who seem lost or confused, with a smile and a wink.
+
+## Configuration File
+
+The bot includes a configuration file (`config.json`), allowing admins to:
+- Enable/disable special user replies.
+- Adjust response sensitivity (from gentle nudges to full-on sarcasm).
+- Toggle moderation features (warnings, mutes, and kicks).
+
+## Firebase Setup
+
+1. Go to [Firebase Console](https://console.firebase.google.com/).
+2. Create a new project and download `firebase_credentials.json`.
+3. Add the path to `.env`:
+   ```
+   FIREBASE_CREDENTIALS=firebase_credentials.json
+   ```
 
 ## Setup
 
-1. Clone the repository:
+1. Clone the repo:
    ```bash
-   git clone https://github.com/yourusername/coconuts-for-padded-helmets.git
+   git clone https://github.com/nerdboy1024/coconuts-for-padded-helmets.git
    ```
 2. Install dependencies:
    ```bash
-   npm install
+   pip install -r requirements.txt
    ```
-3. Set up your bot token and configuration in `.env`.
-
+3. Configure your `.env` file with your bot token and Firebase credentials.
 4. Start the bot:
    ```bash
-   npm start
+   python bot.py
    ```
 
-## Usage
+## Invite the Bot
 
-- Just invite the bot to your server, and let it do its thing!
-- Customize responses in the config file for a more personalized experience.
+Invite the bot with this link (don’t forget the padded helmet for protection):
+```
+https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=8&scope=bot
+```
 
-## Contributing
+## Support and Contact
 
-Contributions are welcome! Feel free to submit issues or pull requests.
+Need help? Encounter a bug (or did Coconuts break it again)? Reach out via:
+- GitHub Issues: [Report an Issue](https://github.com/nerdboy1024/coconuts-for-padded-helmets/issues)
+- Discord Support Server: (Link Coming Soon)
+
+## Contributors
+
+A huge thank you to everyone brave enough to contribute to this project! If you’d like to join the fun (or chaos), submit a pull request.
+
+## Security and Privacy Notice
+
+The bot uses Firebase to store user interaction data. Don’t worry – no sensitive personal data is collected, just logs of Coconuts’ antics for everyone’s amusement.
+
+## FAQ
+
+- **Q: The bot isn’t replying to Coconuts. What’s wrong?**
+  - A: Did Coconuts change his username again? Check the config file before he breaks something else.
+
+- **Q: The bot keeps responding to every message. How do I stop it?**
+  - A: Adjust the sensitivity settings, or give the bot a coffee break.
+
+- **Q: Firebase isn’t connecting. Help!**
+  - A: Check your `firebase_credentials.json` and `.env` setup. Did Coconuts accidentally delete the credentials file?
+
+## Roadmap
+
+- 🛠️ **Enhanced User Tracking**: More detailed analytics for attention-seeking patterns.
+- 🗣️ **Voice Channel Integration**: Roast Coconuts as soon as he joins a voice chat.
+- 📈 **Statistics Dashboard**: A web dashboard to showcase the bot’s interactions and Coconuts’ leaderboard position.
+- 🧩 **Plugin System**: For even more chaotic features.
+
+## Code of Conduct
+
+Be kind and patient, especially when dealing with Coconuts. Remember, this bot exists to make us all laugh (and maybe cringe a little).
 
 ## License
 
