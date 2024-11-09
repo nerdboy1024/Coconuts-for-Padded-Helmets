@@ -108,3 +108,44 @@ Be kind and patient, especially when dealing with Coconuts. Remember, this bot e
 ## License
 
 This project is licensed under the MIT License.
+
+
+## Project Structure
+
+Here’s how the project is organized, so you can easily find your way around:
+
+```
+coconuts-for-padded-helmets/
+├── .env.example          # Example environment variables file
+├── README.md             # Project README with all details
+├── requirements.txt      # Python dependencies
+├── config.json           # Configuration file for bot settings
+├── firebase_credentials.json (not uploaded) # Firebase credentials (add to .gitignore)
+├── bot.py                # Main bot script
+├── utils/
+│   ├── __init__.py       # Init file for utils package
+│   └── firebase.py       # Firebase setup and helper functions
+├── commands/
+│   ├── __init__.py       # Init file for commands package
+│   ├── moderation.py     # Moderation commands and features
+│   └── responses.py      # Custom responses and special user replies
+├── .gitignore            # Ignore sensitive files and cache
+├── .github/
+│   └── workflows/
+│       └── build.yml     # GitHub Actions workflow for CI/CD
+```
+
+### Key Files:
+
+- **`.env.example`**: Example file with placeholders for environment variables (bot token, Firebase path).
+- **`requirements.txt`**: Specifies Python dependencies.
+- **`config.json`**: Configuration options for bot behavior (e.g., moderation enabled, special user replies).
+- **`firebase_credentials.json`**: Firebase credentials (not uploaded, should be listed in `.gitignore`).
+- **`bot.py`**: Main script to run the bot.
+- **`utils/firebase.py`**: Helper functions for interacting with Firebase.
+- **`commands/`**: Contains all bot commands (e.g., moderation, responses).
+- **`.gitignore`**: Excludes sensitive files from being pushed to GitHub.
+- **`build.yml`**: GitHub Actions configuration for automatic builds and testing.
+
+This structure helps keep the project organized and easy to maintain. 🛠️
+
